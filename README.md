@@ -1,7 +1,7 @@
 # TOCA 2 Touring Cars
 
-Private source preparation; no build or gameplay qualification.
-Status, setup instructions and evidence: [T91](https://app.notion.com/p/3de1cf959a4c81d1bb38e5342763307e).
+Private English EU Rev 1 candidate (SLES-01542). Both builds pass setup checks; a headless startup reaches the Codemasters logo. English menus and gameplay remain unverified.
+Status, setup instructions and evidence: [T173](https://app.notion.com/p/3e11cf959a4c8119b6d7cf9b19d44f28).
 
 ## About this project
 
