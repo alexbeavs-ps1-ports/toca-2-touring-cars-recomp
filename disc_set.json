@@ -1,0 +1,18 @@
+{
+  "disc_count": 1,
+  "verdict": "single",
+  "differing_program_fields": [],
+  "warnings": [],
+  "discs": [
+    {
+      "index": 1,
+      "cue_name": "TOCA 2 Touring Cars (Europe) (En,Fr,De) (Rev 1).cue",
+      "cue_path": "disc/TOCA 2 Touring Cars (Europe) (En,Fr,De) (Rev 1).cue",
+      "serial": "SLES-01542",
+      "boot_exe": "SLES_015.42",
+      "entry_pc": "0x800C27D4",
+      "track_count": 2,
+      "required_disc_fp": "ac48f22b03b95126a27f2a3677ce224c7aa209d0451e4e54a6b48fa1e6ca1140"
+    }
+  ]
+}

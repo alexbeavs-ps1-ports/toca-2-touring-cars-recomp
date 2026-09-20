@@ -1,0 +1,29 @@
+{
+  "cue_path": "disc/TOCA 2 Touring Cars (Europe) (En,Fr,De) (Rev 1).cue",
+  "cue_name": "TOCA 2 Touring Cars (Europe) (En,Fr,De) (Rev 1).cue",
+  "bin_name": "TOCA 2 Touring Cars (Europe) (En,Fr,De) (Rev 1) (Track 1).bin",
+  "track_count": 2,
+  "data_track_size": 548406432,
+  "data_track_md5": "47b00d4ee9ffde60308879171f1861be",
+  "data_track_sha1": "059e260922e0460e38b81a37e5565aacd1723c2c",
+  "data_track_crc32": "9f2f5674",
+  "boot_exe": "SLES_015.42",
+  "serial": "SLES-01542",
+  "serial_exe": "SLES_015.42",
+  "volume_id": "SLES_01542",
+  "display_name": "TOCA 2 Touring Cars",
+  "load_address": "0x80012600",
+  "entry_pc": "0x800C27D4",
+  "text_size": "0x000C6000",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "ac48f22b03b95126a27f2a3677ce224c7aa209d0451e4e54a6b48fa1e6ca1140",
+  "boot_exe_sha256": "aa0517f87b7479186921d61cb0f227539ccb171f805205750c8ea2db1056812a",
+  "seed_count": 582,
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

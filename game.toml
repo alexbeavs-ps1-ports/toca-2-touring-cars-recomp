@@ -1,0 +1,55 @@
+
+[game]
+name = "TOCA 2 Touring Cars"
+id = "SLES-01542"
+players = 1
+exe = "disc/SLES_015.42"
+disc = "disc/TOCA 2 Touring Cars (Europe) (En,Fr,De) (Rev 1).cue"
+load_address = "0x80012600"
+entry_pc = "0x800C27D4"
+text_size = "0x000C6000"
+stack_base = "0x801FFFF0"
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "TOCA 2 Touring Cars (Europe) (En,Fr,De) (Rev 1) (Track 1).bin"
+cue_name = "TOCA 2 Touring Cars (Europe) (En,Fr,De) (Rev 1).cue"
+boot_exe = "SLES_015.42"
+known_sizes = [548406432]
+known_md5 = [
+  "47b00d4ee9ffde60308879171f1861be",
+]
+known_sha1 = [
+  "059e260922e0460e38b81a37e5565aacd1723c2c",
+]
+known_crc32 = [
+  "9f2f5674",
+]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH5552.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+openbios = false
+bios_hle = false
+window_title = "TOCA 2 Touring Cars Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 2
+required_disc_fp = "ac48f22b03b95126a27f2a3677ce224c7aa209d0451e4e54a6b48fa1e6ca1140"
+
+[pgo]
+enabled = false
