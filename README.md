@@ -3,6 +3,10 @@
 Private English EU Rev 1 candidate (SLES-01542). Both builds pass setup checks; a headless startup reaches the Codemasters logo. English menus and gameplay remain unverified.
 Status, setup instructions and evidence: [T173](https://app.notion.com/p/3e11cf959a4c8119b6d7cf9b19d44f28).
 
+<!-- release-standard:bios -->
+**BIOS:** SCPH-5552 (Europe) retail BIOS, 524288 bytes, SHA-256 `1faaa18fa820a0225e488d9f086296b8e6c46df739666093987ff7d8fd352c09`. Supply your own dump; releases do not use OpenBIOS.
+<!-- /release-standard:bios -->
+
 ## About this project
 
 These ports are developed by a hobbyist (a DevSecOps engineer, not a game
