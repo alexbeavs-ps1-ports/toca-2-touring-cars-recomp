@@ -2,7 +2,7 @@
 [game]
 name = "TOCA 2 Touring Cars"
 id = "SLES-01542"
-players = 1
+players = 2
 exe = "disc/SLES_015.42"
 disc = "disc/TOCA 2 Touring Cars (Europe) (En,Fr,De) (Rev 1).cue"
 discs = ["disc/TOCA 2 Touring Cars (Europe) (En,Fr,De) (Rev 1).cue"]

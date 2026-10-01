@@ -16,7 +16,10 @@ project(toca_2_touring_cars LANGUAGES C CXX)
 # Setup-host CI requires WIZARD_CMAKE_BLOCK / ENABLE_SETUP_WIZARD (FORCE_SETUP_HOST
 # alone does not open first-run / Generate & rebuild).
 set(PSX_RECOMP_UI ON CACHE BOOL "Use recomp-ui" FORCE)
-set(PSX_NETPLAY OFF CACHE BOOL "Netplay is not qualified" FORCE)
+# Netplay (PS1B-278): on for titles with two or more players.
+if(EXISTS "${PSXRECOMP_ROOT}/lib/recomp-net/CMakeLists.txt")
+    set(PSX_NETPLAY ON CACHE BOOL "Netplay" FORCE)
+endif()
 set(PSX_SETUP_WIZARD ON CACHE BOOL "Enable owned-input setup" FORCE)
 set(PSXRECOMP_BIOS_STEMS "SCPH5552" CACHE STRING "Bound retail BIOS" FORCE)
 set(PSXRECOMP_BIOS_STEM "SCPH5552" CACHE STRING "Accepted BIOS" FORCE)
@@ -34,6 +37,8 @@ if(NOT IS_DIRECTORY "${PSX_PRELOADED_MODS}")
 endif()
 
 psxrecomp_add_game_runtime(psx-runtime
+    ENABLE_NETPLAY_IF_PRESENT
+    NETPLAY_LOBBY_URL "ws://netplay.retcomm.net:8765"
     PRELOADED_MODS_DIR "${PSX_PRELOADED_MODS}"
 
 
@@ -41,7 +46,7 @@ psxrecomp_add_game_runtime(psx-runtime
     EXE_NAME "toca_2_touring_cars"
     WINDOW_TITLE "TOCA 2 Touring Cars"
     DEFAULT_GAME_CONFIG_PATH "game.toml"
-    MAX_PLAYERS 1
+    MAX_PLAYERS 2
 
 
     GEN_MARKER "generated/SLES_015.42_dispatch.c"
