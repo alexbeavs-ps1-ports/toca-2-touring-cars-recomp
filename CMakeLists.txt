@@ -47,6 +47,7 @@ psxrecomp_add_game_runtime(psx-runtime
     WINDOW_TITLE "TOCA 2 Touring Cars"
     DEFAULT_GAME_CONFIG_PATH "game.toml"
     MAX_PLAYERS 2
+    APP_ICON "${CMAKE_CURRENT_SOURCE_DIR}/assets/psxrecomp.ico"
 
 
     GEN_MARKER "generated/SLES_015.42_dispatch.c"
